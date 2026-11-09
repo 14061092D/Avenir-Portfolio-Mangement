@@ -1,0 +1,24 @@
+# 500 USDC total paper capital. Live trading is NOT enabled.
+mode: shadow
+spot_coin: '@142'
+perp_coin: BTC
+capital_usdc: '500'
+order_notional_usdc: '20'
+max_inventory_usdc: '100'
+min_notional_usdc: '10'
+entry_offset_bp: '100'
+minimum_profit_bp: '50'
+execution_reserve_bp: '5'
+spot_maker_fee: '0.0004'
+perp_taker_fee: '0.00045'
+slippage_bp: '10'
+max_book_age_ms: 2000
+quote_min_life_ms: 60000
+reprice_bp: '5'
+safety_cancel_edge_bp: '80'
+dust_wait_ms: 10000
+max_unhedged_usdc: '25'
+max_holding_ms: 3600000
+daily_loss_usdc: '5'
+overall_drawdown_usdc: '10'
+max_hedge_rejections: 3

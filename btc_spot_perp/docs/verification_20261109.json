@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-09",
+  "timezone": "Asia/Hong_Kong",
+  "unit_tests_passed": 79,
+  "synthetic_full_cycle": "Passed: spot maker buy, perp taker short, spot maker sell, perp taker reduce-only cover. Ends flat without a halt. Constructed data, not profitability evidence.",
+  "live_orders_submitted": false,
+  "private_account_calls_performed": false,
+  "shadow_runs": [
+    {
+      "label": "development_300s_prior_unhedged_limit20",
+      "requested_seconds": 300,
+      "end_hkt": "2026-11-09T20:17:55.925000+08:00",
+      "public_feed_messages": 1223,
+      "paper_actions": 6,
+      "simulated_fills": 0,
+      "completed_cycles": 0,
+      "ending_equity_usdc": "500.0",
+      "open_orders_at_stop": 0,
+      "spot_btc": "0",
+      "perp_btc": "0",
+      "pending": null,
+      "feed_error": ""
+    },
+    {
+      "label": "final_code_90s_unhedged_limit25",
+      "requested_seconds": 90,
+      "end_hkt": "2026-11-09T20:20:17.185000+08:00",
+      "public_feed_messages": 384,
+      "paper_actions": 4,
+      "simulated_fills": 0,
+      "completed_cycles": 0,
+      "ending_equity_usdc": "500.0",
+      "open_orders_at_stop": 0,
+      "spot_btc": "0",
+      "perp_btc": "0",
+      "pending": null,
+      "feed_error": ""
+    }
+  ],
+  "limitations": [
+    "No actual maker fills or hedges verified",
+    "Public-print fill model does not establish queue position",
+    "No profitability, APR or MDD evidence",
+    "Live adapter supports classic accounts only; manual activation required"
+  ],
+  "sdk_version": "0.24.0",
+  "source_sha256": {
+    "src/avenir_mm/__init__.py": "0b49336077a92ae2869d7457c97f2b2def7169e4068e0c77587e3f6b5083b7bb",
+    "src/avenir_mm/cli.py": "06690c3c5d80bbaa05f94d26ecc888c684f38b958426e2f88cace6b0a36e0a8c",
+    "src/avenir_mm/config.py": "fb2ef18ff3b83f62c3a9df3a0a9404ea0c8478e5c75568961444645ee67fea2c",
+    "src/avenir_mm/domain.py": "19a9c38681c1cdc814268180cba936bc8c1c57dd8b64cf1935256f0d397bf48a",
+    "src/avenir_mm/engine.py": "85b4286f9a32f8cc710d44f512393ca07be70bfe159267c19a9a797dc6a61754",
+    "src/avenir_mm/feed.py": "16bb77790b7f0b858cd8feaeb47d8115879009e90399d35db73155f2f585be96",
+    "src/avenir_mm/paper.py": "d2bb3c937232f00f5357d41a29c35f103c781553ac864e0406e52f0524a3e3e4",
+    "src/avenir_mm/store.py": "4d7d224680449c41c00b5224f280fa8fed1012e5c3d22a03dda1b22c82e4f8d7",
+    "src/avenir_mm/venue.py": "ca19b8cffc76171a2cd58efbfc63a50d3a0b58a1949d1abeaf8bf90d3bc75630"
+  },
+  "clean_stop_restart": "Passed: resumed the final shadow state for 10 seconds; ended flat with no pending commands or open orders."
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avenir-hl-mm"
+version = "0.1.0"
+description = "Small-capital BTC spot/perpetual market-making pilot for Hyperliquid"
+requires-python = ">=3.11"
+dependencies = ["hyperliquid-python-sdk==0.24.0", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+avenir-mm = "avenir_mm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
