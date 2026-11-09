@@ -1,0 +1,66 @@
+{
+  "pairs": [
+    {
+      "pair_id": "binance:PAXGUSDT:PAXGUSDT",
+      "maker": {
+        "venue": "binance",
+        "symbol": "PAXGUSDT",
+        "kind": "spot",
+        "underlying": "PAXG",
+        "quote": "USDT",
+        "tick_size": "0.01",
+        "qty_step": "0.0001",
+        "min_qty": "0.0001",
+        "min_notional": "5",
+        "contract_size": "1",
+        "active": true
+      },
+      "hedge": {
+        "venue": "binance",
+        "symbol": "PAXGUSDT",
+        "kind": "linear",
+        "underlying": "PAXG",
+        "quote": "USDT",
+        "tick_size": "0.01",
+        "qty_step": "0.001",
+        "min_qty": "0.001",
+        "min_notional": "5",
+        "contract_size": "1",
+        "active": true
+      },
+      "maker_fee_bps": "1",
+      "hedge_fee_bps": "1",
+      "fee_in_base": true,
+      "mapping_verified": true,
+      "corporate_actions_ready": true,
+      "target_notional": "100000",
+      "hedge_margin_fraction": "0.5",
+      "maker_route": null
+    }
+  ],
+  "engine": {
+    "capital_limit": "150000",
+    "max_active_pairs": 3,
+    "max_unhedged_notional": "100",
+    "max_balance_age_ms": 30000,
+    "maker_ttl_ms": 30000,
+    "order_timeout_ms": 5000,
+    "hedge_retry_ms": 1000,
+    "hedge_slippage_bps": "10",
+    "negative_carry_confirm_ms": 86400000,
+    "max_hold_days": null,
+    "signal": {
+      "slice_notional": "500",
+      "fair_window": 24,
+      "deviation_window": 720,
+      "entry_quantile": "0.95",
+      "horizon_days": "30",
+      "min_net_edge_bps": "2",
+      "execution_reserve_bps": "4",
+      "min_capital_apr": "0",
+      "max_book_age_ms": 2000,
+      "max_funding_age_ms": 32400000,
+      "max_history_age_ms": 7200000
+    }
+  }
+}

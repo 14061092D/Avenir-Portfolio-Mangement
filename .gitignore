@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.sqlite
+*.sqlite-*
+*.db
+.env
+*.pem
+config.local.json
