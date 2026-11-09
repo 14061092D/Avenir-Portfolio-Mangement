@@ -6,7 +6,7 @@ The default mode uses real public Hyperliquid market data and simulated orders. 
 
 ## Run the public-data simulation
 
-Use Python 3.11 or later on macOS or Linux. Run these commands from the repository root:
+Use Python 3.11 or later on macOS or Linux. Run these commands from the `btc_spot_perp/` package directory:
 
 ```sh
 python3 -m venv .venv
